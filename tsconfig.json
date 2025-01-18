@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                   // 目标版本
+      "module": "commonjs",              // 模块规则
+      "strict": true,                    // 启用所有严格类型检查选项
+      "esModuleInterop": true,           // 允许 default import
+      "skipLibCheck": true,              // 跳过库文件检查
+      "forceConsistentCasingInFileNames": true, // 文件名一致性
+      "outDir": "./dist",               // 编译后输出目录
+      "sourceMap": true,                // 生成 source maps
+    },
+    "include": ["**/*.ts"],              // 包含的文件
+    "exclude": ["node_modules"]          // 排除的文件
+}

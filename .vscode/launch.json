@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch Program",
+        "skipFiles": ["<node_internals>/**"],
+        "program": "${workspaceFolder}/dist/src/index.js",      // 指向编译后的文件
+        "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+        "console": "integratedTerminal",                    // 使用集成终端而不是调试控制台
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch & Build Program",
+        "skipFiles": ["<node_internals>/**"],
+        "program": "${workspaceFolder}/dist/src/index.js",      // 指向编译后的文件
+        "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+        "preLaunchTask": "npm: build",                      // 在启动之前调用 build
+        "console": "integratedTerminal",                    // 使用集成终端而不是调试控制台
+      },
+    ]
+  }
+  
